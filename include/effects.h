@@ -8,7 +8,7 @@ typedef struct {
     float reverb_decay;
     float lp_cutoff;
 } FxParams;
-
+   
 void fx_init(void);
 void fx_lowpass(int16_t *buf, int frames, float cutoff);
 void fx_reverb(int16_t *buf, int frames, float wet, float decay);
